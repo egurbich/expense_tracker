@@ -16,7 +16,6 @@ def add_transaction(ledger, transaction):
 
     return True
     
-
 def filter_by_type(ledger, transaction_type):
     result = [tx for tx in ledger if tx['type'] == transaction_type]
     return result
