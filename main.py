@@ -89,15 +89,15 @@ def show_summary_menu(ledger):
     balance = get_balance(ledger)
     expenses_by_cat = get_expenses_by_category(ledger)
     
-    print(f"\nTotal Income:    {total_income:>10.2f} UAH")
-    print(f"Total Expenses:  {total_expenses:>10.2f} UAH")
+    print(f"\nTotal Income:    {total_income:>10.2f} USD")
+    print(f"Total Expenses:  {total_expenses:>10.2f} USD")
     print(f"{'─' * 35}")
-    print(f"Balance:         {balance:>10.2f} UAH")
+    print(f"Balance:         {balance:>10.2f} USD")
     
     if expenses_by_cat:
         print("\n--- Expenses by Category ---")
         for category, amount in sorted(expenses_by_cat.items()):
-            print(f"{category:<20} {amount:>10.2f} UAH")
+            print(f"{category:<20} {amount:>10.2f} USD")
 
 
 def main():
